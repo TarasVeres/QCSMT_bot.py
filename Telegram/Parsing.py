@@ -139,8 +139,6 @@ def beginning():
     func_Device()
     func_Spec()
     func_Defects()
-    speca = Sheet['spec_all']["Ajax, HB2.008.MBR.001v0_[9XX-AFA]_"]['TOP']['C']
-    Sheet['spec_all']["Ajax, HB2.008.MBR.001v0_[9XX-AFA]_"]['TOP']['C'] += speca
     with open("data_file.json", "w", encoding='utf8') as write_file:
         json.dump(Sheet, write_file, skipkeys=False, indent=4, ensure_ascii=False)
     return
