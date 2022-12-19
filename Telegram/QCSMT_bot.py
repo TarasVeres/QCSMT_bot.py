@@ -252,22 +252,26 @@ async def device_callback(call: types.CallbackQuery):
             spec = [i for i in Sheet['spec_all'][Reply_message[c_id]['project']][Reply_message[c_id]['side']] \
                 [Reply_message[c_id]['type_spec']]]
             if len(spec) > 99:
-                button, Reply_message[c_id]['data_set'] = Inline_Keyboard.inline_c3_data100(spec, 'defects', Reply_message[c_id])
                 Reply_message[c_id]['data_set_count'] = 0
+                button, Reply_message[c_id]['data_set'] = Inline_Keyboard.inline_c3_data100(spec, 'defects', Reply_message[c_id], Reply_message[c_id]['data_set_count'])
             else:
                 button = Inline_Keyboard.inline_c3(spec, 'defects', Reply_message[c_id])
             await bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
                                         text='Оберіть компонент:', reply_markup=button)
-        elif call.data in 'data_set':
+        elif 'data_set' in call.data:
             await call.answer('')
             if 'data_set+1' in call.data:
                 Reply_message[c_id]['data_set_count'] += 1
-                spec = [i for i in Reply_message[c_id]['data_set'][Reply_message[c_id]['data_set_count']]]
-                button = Inline_Keyboard.inline_c3_data100(spec, 'defects', Reply_message[c_id])
-
-
-
-
+                spec = [i for i in Sheet['spec_all'][Reply_message[c_id]['project']][Reply_message[c_id]['side']] \
+                    [Reply_message[c_id]['type_spec']]]
+                button, Reply_message[c_id]['data_set'] = Inline_Keyboard.inline_c3_data100(spec, 'defects', Reply_message[c_id], Reply_message[c_id]['data_set_count'])
+            elif 'data_set-1' in call.data:
+                Reply_message[c_id]['data_set_count'] -= 1
+                spec = [i for i in Sheet['spec_all'][Reply_message[c_id]['project']][Reply_message[c_id]['side']] \
+                    [Reply_message[c_id]['type_spec']]]
+                button, Reply_message[c_id]['data_set'] = Inline_Keyboard.inline_c3_data100(spec, 'defects', Reply_message[c_id], Reply_message[c_id]['data_set_count'])
+            await bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
+                                        text='Оберіть компонент:', reply_markup=button)
         elif 'yes_amount_data' in call.data:
             await call.answer('')
             Reply_message[c_id]['yes_amount_data'] = call.data

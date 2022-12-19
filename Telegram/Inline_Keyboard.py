@@ -44,48 +44,54 @@ def inline_c3(data, backer, c_id):
                 button.add(types.InlineKeyboardButton(text='⬅️ Назад', callback_data=c_id[backer]))
     return button
 
-def inline_c3_data100(data, backer, c_id):
+def inline_c3_data100(data, backer, c_id, count=0):
     button = types.InlineKeyboardMarkup(row_width=3)
     data_set = []
-    count = 0
+    count = count
     while data:
         if len(data) > 99:
-            ind_ex = 99
+            ind_ex = 97
             data_set.append(data[:ind_ex])
         else:
             ind_ex = len(data)
             data_set.append(data[:ind_ex])
         data = data[ind_ex:]
 
-    for elem in data_set:
-        for i in range(0, 98, 3):
+    elem = data_set[count]
+    for i in range(0, len(elem), 3):
+        try:
             button.add(
                 types.InlineKeyboardButton(text=elem[i], callback_data=elem[i]),
                 types.InlineKeyboardButton(text=elem[i + 1], callback_data=elem[i + 1]),
                 types.InlineKeyboardButton(text=elem[i + 2], callback_data=elem[i + 2]),
             )
-        if (count == 0):
-            button.add(
-                types.InlineKeyboardButton(text="Наступна сторінка", callback_data='data_set+1')
-            )
-        elif data_set[count] != data_set[-1]:
-            button.add(
-                types.InlineKeyboardButton(text='Попередня сторінка', callback_data='data_set+1'),
-                types.InlineKeyboardButton(text="Наступна сторінка", callback_data='data_set-1'),
-            )
-        elif data_set[count] == data_set[-1]:
-            button.add(
-                types.InlineKeyboardButton(text='Попередня сторінка', callback_data='data_set-1')
-            )
+        except IndexError:
+            try:
+                button.add(
+                    types.InlineKeyboardButton(text=elem[i], callback_data=elem[i]),
+                    types.InlineKeyboardButton(text=elem[i + 1], callback_data=elem[i + 1])
+                )
+            except IndexError:
+                button.add(
+                    types.InlineKeyboardButton(text=elem[i], callback_data=elem[i])
+                )
+    if (count == 0):
         button.add(
-            types.InlineKeyboardButton(text='⬅️ Назад', callback_data=c_id[backer])
+            types.InlineKeyboardButton(text="Наступна сторінка⏩📖", callback_data='data_set+1')
         )
-        count += 1
+    elif data_set[count] != data_set[-1]:
+        button.add(
+            types.InlineKeyboardButton(text='📖⏪Попередня сторінка', callback_data='data_set+1'),
+            types.InlineKeyboardButton(text="Наступна сторінка⏩📖", callback_data='data_set-1'),
+        )
+    elif data_set[count] == data_set[-1]:
+        button.add(
+            types.InlineKeyboardButton(text='📖⏪Попередня сторінка', callback_data='data_set-1')
+        )
+    button.add(
+        types.InlineKeyboardButton(text='⬅️ Назад', callback_data=c_id[backer])
+    )
     return button, data_set
-
-
-
-
 
 def inline_c1(data, backer, c_id):
     button = types.InlineKeyboardMarkup(row_width=1)
