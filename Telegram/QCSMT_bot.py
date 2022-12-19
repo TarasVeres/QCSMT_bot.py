@@ -12,7 +12,7 @@ Chat_work = '-1001770966304'
 Token_test = '5182014508:AAEBytjLM9Gu-3F2o1Qc2QPt5bwdvNWxFEk'
 Chat_test = '-1001626029923'
 
-bot = Bot(Token_test)
+bot = Bot(Token_work)
 dp = Dispatcher(bot)
 Reply_message = dict()
 mq = str()
@@ -132,13 +132,13 @@ async def device_callback(call: types.CallbackQuery):
             if 'yes_break' in call.data:
                 post = '✅ Повідомлення про відсутність успішно переслане!\nЩоб зробити новий запис натисніть /start'
                 reply = assembler_message.assembling_break(Reply_message[c_id])
-                await bot.send_message(chat_id=Chat_test, text=reply)
+                await bot.send_message(chat_id=Chat_work, text=reply)
             else:
                 if 'yes_3_5_10' in call.data:
                     post = '✅ Повідомлення про зупинку лінії успішно переслане!\nЩоб зробити новий запис натисніть /start'
                 elif 'yes_information_of_defect' in call.data:
                     post = '✅ Повідомлення з інформування про дефект переслане!\nЩоб зробити новий запис натисніть /start'
-                await bot.send_media_group(chat_id=Chat_test, media=Reply_message[c_id]['med'])
+                await bot.send_media_group(chat_id=Chat_work, media=Reply_message[c_id]['med'])
 
             await bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id, text=post)
         elif call.data in 'data':
