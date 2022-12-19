@@ -75,7 +75,7 @@ def inline_c3_data100(data, backer, c_id, count=0):
                 button.add(
                     types.InlineKeyboardButton(text=elem[i], callback_data=elem[i])
                 )
-    if (count == 0):
+    if count == 0:
         button.add(
             types.InlineKeyboardButton(text="Наступна сторінка⏩📖", callback_data='data_set+1')
         )
