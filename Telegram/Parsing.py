@@ -108,6 +108,9 @@ def func_Spec():
                 Sheet['spec_all'][project][side][spec] += [component]
         except ZeroDivisionError:
             pass
+    for project in Sheet['spec_all'].keys():
+        for side in Sheet['spec_all'][project].keys():
+            Sheet['spec_all'][project][side]['AZ'] = None
     return Sheet
 
 def func_Defects():

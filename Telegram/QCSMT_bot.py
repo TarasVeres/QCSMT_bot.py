@@ -242,8 +242,8 @@ async def device_callback(call: types.CallbackQuery):
             button = Inline_Keyboard.inline_c2_nonBacker(type_spec, 'no_amount_data')
             await bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
                                         text='Оберіть тип компоненту:', reply_markup=button)
-        elif (('project' in Reply_message[c_id]) and ('side' in Reply_message[c_id])) and \
-                (call.data in Sheet['spec_all'][Reply_message[c_id]['project']][Reply_message[c_id]['side']]):
+        elif ((('project' in Reply_message[c_id]) and ('side' in Reply_message[c_id])) and \
+                (call.data in Sheet['spec_all'][Reply_message[c_id]['project']][Reply_message[c_id]['side']])) and (call.data not in 'AZ'):
             await call.answer('')
             Reply_message[c_id]['type_spec'] = call.data
             delete = ['count_defects', 'non_liquidity', 'non_liquidity_board', 'non_liquidity_mult', 'spec',
@@ -281,15 +281,18 @@ async def device_callback(call: types.CallbackQuery):
             button.add(types.InlineKeyboardButton(text='⬅️Назад', callback_data=Reply_message[c_id]['side']))
             await bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
                                         text='Введіть кількість:', reply_markup=button)
-        elif (('project' in Reply_message[c_id]) and ('side' in Reply_message[c_id]) and ('type_spec' in Reply_message[c_id]))\
+        elif ((('project' in Reply_message[c_id]) and ('side' in Reply_message[c_id]) and ('type_spec' in Reply_message[c_id]))\
             and (call.data in Sheet['spec_all'][Reply_message[c_id]['project']][Reply_message[c_id]['side']]
-            [Reply_message[c_id]['type_spec']]):
+            [Reply_message[c_id]['type_spec']])) or (call.data in 'AZ'):
             await call.answer('')
             Reply_message[c_id]['spec'] = call.data
             delete = ['count_defects', 'non_liquidity', 'non_liquidity_board', 'non_liquidity_mult', '3_5_10',
                       'coments', 'type_defect', 'yes_coments_information']
             Inline_Keyboard.deleter_key(delete, Reply_message[c_id])
-            button.add(types.InlineKeyboardButton(text='⬅️Назад', callback_data=Reply_message[c_id]['type_spec']))
+            backer = 'type_spec'
+            if Reply_message[c_id]['spec'] in 'AZ':
+                backer = 'spec'
+            button.add(types.InlineKeyboardButton(text='⬅️Назад', callback_data=Reply_message[c_id][backer]))
             await bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
                                         text='Введіть кількість дефектів:', reply_markup=button)
         elif (call.data in Sheet['project_all'][Reply_message[c_id]['type']][Reply_message[c_id]['device']]) \
@@ -441,7 +444,7 @@ async def device_callback(call: types.CallbackQuery):
             button.add(types.InlineKeyboardButton(text='⬅️ Назад', callback_data='yes_amount_data'))
             await bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
                                          text='Внести дефекти?', reply_markup=button)
-    except ZeroDivisionError:
+    except ZeroDivisionError: #Key, Index, Attr
         pass
 
 
