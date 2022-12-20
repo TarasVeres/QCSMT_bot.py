@@ -77,16 +77,16 @@ def inline_c3_data100(data, backer, c_id, count=0):
                 )
     if count == 0:
         button.add(
-            types.InlineKeyboardButton(text="Наступна сторінка⏩📖", callback_data='data_set+1')
+            types.InlineKeyboardButton(text="Наступна\nсторінка⏩📖", callback_data='data_set+1')
         )
     elif data_set[count] != data_set[-1]:
         button.add(
-            types.InlineKeyboardButton(text='📖⏪Попередня сторінка', callback_data='data_set+1'),
-            types.InlineKeyboardButton(text="Наступна сторінка⏩📖", callback_data='data_set-1'),
+            types.InlineKeyboardButton(text='📖⏪Попередня\nсторінка', callback_data='data_set+1'),
+            types.InlineKeyboardButton(text="Наступна\nсторінка⏩📖", callback_data='data_set-1'),
         )
     elif data_set[count] == data_set[-1]:
         button.add(
-            types.InlineKeyboardButton(text='📖⏪Попередня сторінка', callback_data='data_set-1')
+            types.InlineKeyboardButton(text='📖⏪Попередня\nсторінка', callback_data='data_set-1')
         )
     button.add(
         types.InlineKeyboardButton(text='⬅️ Назад', callback_data=c_id[backer])
