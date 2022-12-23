@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46ff2f6e-e204-4694-910e-8acccf5404aa" name="Changes" comment="Added phantom component 'AZ' to all projects and their sides and the ability to select it." />
+    <list default="true" id="46ff2f6e-e204-4694-910e-8acccf5404aa" name="Changes" comment="The row counter in the table is updated automatically">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Telegram/QCSMT_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/Telegram/QCSMT_bot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Telegram/writer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Telegram/writer.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -94,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671548363743</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="The row counter in the table is updated automatically">
+      <created>1671633494525</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671633494525</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -110,7 +121,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added phantom component 'AZ' to all projects and their sides and the ability to select it." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added phantom component 'AZ' to all projects and their sides and the ability to select it." />
+    <MESSAGE value="The row counter in the table is updated automatically" />
+    <option name="LAST_COMMIT_MESSAGE" value="The row counter in the table is updated automatically" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -127,7 +139,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Telegram/QCSMT_bot.py</url>
-          <line>446</line>
+          <line>435</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>

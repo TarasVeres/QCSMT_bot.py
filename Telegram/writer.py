@@ -13,16 +13,7 @@ credentials = ServiceAccountCredentials.from_json_keyfile_name(
 httpAuth = credentials.authorize(httplib2.Http())
 service = apiclient.discovery.build('sheets', 'v4', http=httpAuth)
 
-day = 32
 number = 4
-
-def number_writer():
-    global day, number
-    if day != time.localtime().tm_mday:
-        _ = service.spreadsheets().values().get(spreadsheetId=spreadsheet_id, range='Print!A1:A30000', majorDimension='ROWS').execute()
-        number = int(_['values'][-1][-1]) if _['values'][-1][-1] != '№' else 4
-        day = time.localtime().tm_mday
-    return number
 
 def update_number_writer():
     global day, number
@@ -32,9 +23,8 @@ def update_number_writer():
 
 def writer(c_id):
     global number
-    number += 1
     value = [[''] for i in range(29)]
-    value[0] = [str(number)]
+    value[0] = [str(update_number_writer() + 1)]
     value[1] = [time.strftime("%d.%m.%Y", time.localtime())]
     value[2] = [time.strftime("%H:%M", time.localtime())]
     value[3] = [c_id['line']]
@@ -76,7 +66,7 @@ def writer(c_id):
         body={
             "valueInputOption": "USER_ENTERED",
             "data": [
-                {"range": f'Print!A{number}:AC30000',
+                {"range": f'Print!A{number + 1}:AC30000',
                  "majorDimension": "COLUMNS",
                  "values": value}
             ]
@@ -85,9 +75,8 @@ def writer(c_id):
 
 def writer_non_defect(c_id):
     global number
-    number += 1
     value = [[''] for i in range(29)]
-    value[0] = [str(number)]
+    value[0] = [str(update_number_writer() + 1)]
     value[1] = [time.strftime("%d.%m.%Y", time.localtime())]
     value[2] = [time.strftime("%H:%M", time.localtime())]
     value[3] = [c_id['line']]
@@ -104,7 +93,7 @@ def writer_non_defect(c_id):
         body={
             "valueInputOption": "USER_ENTERED",
             "data": [
-                {"range": f'Print!A{number}:AC30000',
+                {"range": f'Print!A{number + 1}:AC30000',
                  "majorDimension": "COLUMNS",
                  "values": value}
             ]

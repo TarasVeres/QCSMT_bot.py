@@ -29,17 +29,6 @@ async def UpdateSheet(message: types.Message):
     else:
         pass
 
-@dp.message_handler(commands=['counterrowsheet'])
-async def Update_number_counter_Sheet(message: types.Message):
-    if message.chat.id == message.from_user.id:
-        if str(message.from_user.id) in Sheet['access_id']:
-            writer.number = writer.update_number_writer()
-            await bot.send_message(chat_id=message.chat.id, text='Лічильник рядків оновлено. Щоб зробити запис натисніть  /start')
-        else:
-            await bot.send_message(message.chat.id, 'Нажаль, у вас немає доступу до користування ботом!😢')
-    else:
-        pass
-
 @dp.message_handler(commands=['start'])
 async def start(message: types.Message):
     global Reply_message, Sheet
@@ -47,7 +36,6 @@ async def start(message: types.Message):
     if message.chat.id == message.from_user.id:
         button = types.InlineKeyboardMarkup(row_width=1)
         Sheet = checker()
-        writer.number_writer()
         if str(message.from_user.id) in Sheet['access_id']:
             Reply_message[m_id] = dict()
             button.add(types.InlineKeyboardButton(text='Внести данні в журнал', callback_data='data'),
@@ -242,7 +230,7 @@ async def device_callback(call: types.CallbackQuery):
             button = Inline_Keyboard.inline_c2_nonBacker(type_spec, 'no_amount_data')
             await bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
                                         text='Оберіть тип компоненту:', reply_markup=button)
-        elif ((('project' in Reply_message[c_id]) and ('side' in Reply_message[c_id])) and \
+        elif ((('project' in Reply_message[c_id]) and ('side' in Reply_message[c_id])) and
                 (call.data in Sheet['spec_all'][Reply_message[c_id]['project']][Reply_message[c_id]['side']])) and (call.data not in 'AZ'):
             await call.answer('')
             Reply_message[c_id]['type_spec'] = call.data
@@ -281,7 +269,7 @@ async def device_callback(call: types.CallbackQuery):
             button.add(types.InlineKeyboardButton(text='⬅️Назад', callback_data=Reply_message[c_id]['side']))
             await bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
                                         text='Введіть кількість:', reply_markup=button)
-        elif ((('project' in Reply_message[c_id]) and ('side' in Reply_message[c_id]) and ('type_spec' in Reply_message[c_id]))\
+        elif ((('project' in Reply_message[c_id]) and ('side' in Reply_message[c_id]) and ('type_spec' in Reply_message[c_id]))
             and (call.data in Sheet['spec_all'][Reply_message[c_id]['project']][Reply_message[c_id]['side']]
             [Reply_message[c_id]['type_spec']])) or (call.data in 'AZ'):
             await call.answer('')
@@ -444,7 +432,7 @@ async def device_callback(call: types.CallbackQuery):
             button.add(types.InlineKeyboardButton(text='⬅️ Назад', callback_data='yes_amount_data'))
             await bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
                                          text='Внести дефекти?', reply_markup=button)
-    except ZeroDivisionError: #Key, Index, Attr
+    except (KeyError, IndexError, AttributeError): #Key, Index, Attr
         pass
 
 
@@ -568,7 +556,7 @@ async def handle_files(message):
                         await bot.send_message(message.chat.id, text=post)
                 else:
                     await bot.send_message(message.chat.id, text=assembler_message.input_validation_defect)
-            except ZeroDivisionError:
+            except (KeyError, AttributeError, IndexError):
                 pass
 
 
