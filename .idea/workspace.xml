@@ -4,15 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46ff2f6e-e204-4694-910e-8acccf5404aa" name="Changes" comment="The row counter in the table is updated automatically">
+    <list default="true" id="46ff2f6e-e204-4694-910e-8acccf5404aa" name="Changes" comment="Fixed bag update_number_writer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Telegram/Parsing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Telegram/Parsing.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Telegram/QCSMT_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/Telegram/QCSMT_bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Telegram/writer.py" beforeDir="false" afterPath="$PROJECT_DIR$/Telegram/writer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Telegram/data_file.json" beforeDir="false" afterPath="$PROJECT_DIR$/Telegram/data_file.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -105,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671633494525</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fixed bag update_number_writer">
+      <created>1671830485277</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671830485277</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -122,27 +137,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added phantom component 'AZ' to all projects and their sides and the ability to select it." />
     <MESSAGE value="The row counter in the table is updated automatically" />
-    <option name="LAST_COMMIT_MESSAGE" value="The row counter in the table is updated automatically" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Telegram/Parsing.py</url>
-          <line>111</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Telegram/Parsing.py</url>
-          <line>112</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Telegram/QCSMT_bot.py</url>
-          <line>435</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Fixed bag update_number_writer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed bag update_number_writer" />
   </component>
 </project>

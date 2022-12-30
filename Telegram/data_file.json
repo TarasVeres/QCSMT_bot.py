@@ -49,6 +49,14 @@
     },
     "project_all": {
         "Jeweller": {
+            "AnaNAS(NVR)": [
+                "Ajax, NVR.003.MBR.001v4_",
+                "Ajax, NVR.003.PWB.001v1_"
+            ],
+            "Bridge": [
+                "Ajax, ocBridge v.15_868 Mhz_",
+                "Ajax, uartBridge v.8_ 868 Mhz_"
+            ],
             "Button/Double_Button": [
                 "Ajax, PBJ.003.MBR.001v5_868 Mhz_",
                 "Ajax, PBJ.903.MBR.001v0 (9XX)_",
@@ -68,19 +76,37 @@
                 "Ajax, DoorProtect Plus_v.9_868 Mhz_",
                 "Ajax, DPP.001.MBR.001v9 (9XX)_"
             ],
+            "DualcurtainOutdoor": [
+                "Ajax, DCO.001.MBR.001v5_",
+                "Ajax, DCO.001.MBR.001v5 (9XX)_",
+                "Ajax, DCO.001.PIR.001v4_"
+            ],
             "FireProtect/Plus": [
                 "Ajax, Fire_Protect_Top_Board_V2.1_",
                 "Ajax, FP_.001.MBR.000v7d_",
                 "Ajax, FPP_.001.MBR.000v7d_"
+            ],
+            "FireProtect/Plus_2.0(EM)": [
+                "Ajax, EM4.002.MBR.001v4_[FP_8ХХ]_",
+                "Ajax, EM4.002.MBR.001v4_[FPP_8ХХ]_",
+                "Ajax, EM4.002.MBR.001v4_[FPP_9ХХ]_",
+                "Ajax, EM4.002.MBR.001v4_[FP2_SB_8ХХ]_",
+                "Ajax, EM4.002.MBR.001v4_[FP2_SB_9ХХ]_",
+                "Ajax, EM4.002.MBR.001v4_[FPP2_SB_9XX]_",
+                "Ajax, EM4.002.MBR.001v4_[FPP2_SB_8ХХ]_",
+                "Ajax, EM4.002.MBR.001v4_[FP_9ХХ]_"
             ],
             "GlassProtect": [
                 "Ajax, GP.001.MBR.001v10 (9XX)_",
                 "Ajax, GlassProtect v4_868 Mhz_",
                 "Ajax, GP.001.MBR.001v10_868 Mhz_"
             ],
-            "HomeSiren": [
-                "Ajax, HS.001.MBR.001v4_[8XX-66A]_",
-                "Ajax, HS.001.MBR.001v5_[9XX-66A]_"
+            "HB2/HB2-PWB": [
+                "Ajax, HB2.005.MBR.001v0_[HB2-8XX]_",
+                "Ajax, HB2.005.MBR.001v0_[HB2-8XX-66A]_",
+                "Ajax, HB2.005.MBR.001v0_[HB2-9XX]_",
+                "Ajax, HB2.001.PWB.001v4_",
+                "Ajax, HB2.001.MBR.001v4_(8XX)_"
             ],
             "HUB/HUB-PWB": [
                 "Ajax, HUB-07d_868 Mhz_",
@@ -93,20 +119,80 @@
                 "Ajax, HUB.001.PWB.001v1_",
                 "Ajax, HUB.001.601.000v16_"
             ],
-            "HB2/HB2-PWB": [
-                "Ajax, HB2.005.MBR.001v0_[HB2-8XX]_",
-                "Ajax, HB2.005.MBR.001v0_[HB2-8XX-66A]_",
-                "Ajax, HB2.005.MBR.001v0_[HB2-9XX]_",
-                "Ajax, HB2.001.PWB.001v4_",
-                "Ajax, HB2.001.MBR.001v4_(8XX)_"
+            "HUB_2_4G": [
+                "Ajax, HB2.003.MBR.001v1_",
+                "Ajax, HB2.003.MBR.001v1_(9XX/ECG)_",
+                "Ajax, HB2.003.MBR.001v1_[8XX-ECG-EA]_",
+                "Ajax, HB2.006.MBR.001v0_[8XX-ECG]_",
+                "Ajax, HB2.006.MBR.001v0[8XX-ECG-66A]_",
+                "Ajax, HB2.006.MBR.001v0_[9XX-AUX]_",
+                "Ajax, HB2.006.MBR.001v0_[9XX-AFA]_"
+            ],
+            "HUB_2_Plus": [
+                "Ajax, HB2.002.MBR.001v2a_",
+                "Ajax, HB2.002.MBR.001v2a_(9XX/AUX)_",
+                "Ajax, HB2.002.MBR.001v2a_(9XX/AFA)_",
+                "Ajax, HB2.008.MBR.001v0_[8XX-ECG]_",
+                "Ajax, HB2.008.MBR.001v0_[9XX-AFA]_",
+                "Ajax, HB2.008.MBR.001v0_[9XX-AUX]_",
+                "Ajax, HB2.008.MBR.001v0_[9XX-VFA]_",
+                "Ajax, HB2.008.MBR.001v0_[9XX-ECG]_",
+                "Ajax, HB2.008.MBR.001v1_[8XX-ECG]_",
+                "Ajax, HB2.008.MBR.001v1[9XX-AFA]_",
+                "Ajax, HB2.008.MBR.001v1[9XX-AUX]_"
+            ],
+            "HUB_2_Prosegur": [
+                "Ajax, HB2.002.MBR.001v2a (8XX_ECG_PSG)_",
+                "Ajax, HB2.002.MBR.001v2a (9XX_AUX_PSG)_"
+            ],
+            "HomeSiren": [
+                "Ajax, HS.001.MBR.001v4_[8XX-66A]_",
+                "Ajax, HS.001.MBR.001v5_[9XX-66A]_"
+            ],
+            "KeuPad_Touchscreen": [
+                "Ajax, KPG.001.MBR.000v2_",
+                "Ajax, KPG.001.PRX.000v4_",
+                "Ajax, KPG.001.LOG.000v1_",
+                "Ajax, KPG.001.NFC.000v3_",
+                "Ajax, MOD.001.L01.000v0_",
+                "Ajax, MOD.001.F03.000v0_",
+                "Ajax, MOD.001.D01.000v0_"
             ],
             "KeyPad": [
                 "Ajax, Keypad V12_868 Mhz_",
                 "Ajax, Keypad V12 (9XX)_"
             ],
+            "KeyPad_Combi": [
+                "Ajax, KPS.001.TOP.001v6_",
+                "Ajax, KPS.001.BOT.001v4_",
+                "Ajax, KPS.001.TOP.001v7_",
+                "Ajax, KPS.001.TOP.001v6 (9XX)_",
+                "Ajax, KPS.001.TOP.001v7 (9XX)_"
+            ],
+            "KeyPad_Plus": [
+                "Ajax, KPP.001.MBR.001v12_",
+                "Ajax, KPP.001.MBR.001v12 (9XX)_",
+                "Ajax, CFM.001.MBR.001v2_"
+            ],
             "LeaksProtect": [
                 "Ajax, LeaksProtect_v8_868 Mhz_",
                 "Ajax, LeaksProtect_v8 (9XX)_"
+            ],
+            "LifeQualityControl": [
+                "Ajax, LQC.001.MBR.001v10_",
+                "Ajax, LQC.001.MBR.001v10_(9XX) ",
+                "Ajax, LQC.001.LED.001v4_"
+            ],
+            "LightSwitch": [
+                "Ajax, LSW.001.KS1.001v5_",
+                "Ajax, LSW.001.MBR.001v6[1gang]_",
+                "Ajax, LSW.001.MBR.001v6[2gang]_",
+                "Ajax, LSW.001.MBR.001v6[2way]_",
+                "Ajax, LSW.001.PWR.001v9[1gang]_",
+                "Ajax, LSW.001.PWR.001v9[2gang]_",
+                "Ajax, LSW.001.PWR.001v9[2way]_",
+                "Ajax, LSW.001.KS3.001v3_",
+                "Ajax, LSW.001.KS2.001v3_"
             ],
             "MotionCam": [
                 "Ajax, CAM.001.PIR.001v7_868 Mhz_",
@@ -114,6 +200,27 @@
                 "Ajax, CAM.001.MBR.001v7_868 Mhz_",
                 "Ajax, CAM.005.PIR.001v0_(8XX)_",
                 "Ajax, CAM.005.PIR.001v0_(9XX)_"
+            ],
+            "MotionCam(PHOD)": [
+                "Ajax, CAM.004.MBR.001v1_868 Mhz_",
+                "Ajax, CAM.004.PIR.001v0_868 Mhz_",
+                "Ajax, CAM.004.PIR.001v0_(9XX)_",
+                "Ajax, CAM.004.MBR.001v3_(8XX)_"
+            ],
+            "MotionCamOutdoor(PHOD)": [
+                "Ajax, MCO.002.MBR.001v0_",
+                "Ajax, MCO.002.MBR.001v0 (9XX)_"
+            ],
+            "MotionCam_Outdoor": [
+                "Ajax, MCO.001.MBR.001v5_",
+                "Ajax, MCO.001.MBR.001v5 (9XX)_",
+                "Ajax, MCO.001.PIR.001v3_",
+                "Ajax, MCO.001.FLB.001v4_",
+                "Ajax, MCO.001.OVB.001v4_",
+                "Ajax, MCO.001.OVB.001v5_",
+                "Ajax, MCO.001.OVB.001v6_",
+                "Ajax, MCO.001.MBR.001v12_(8XX)_",
+                "Ajax, MCO.001.PIR.001v5_"
             ],
             "MotionProtect": [
                 "Ajax, CP_M_v4c_Motion_868 Mhz_",
@@ -133,58 +240,9 @@
             "MotionProtectPlus": [
                 "Ajax, MotionProtectMW V2_"
             ],
-            "Bridge": [
-                "Ajax, ocBridge v.15_868 Mhz_",
-                "Ajax, uartBridge v.8_ 868 Mhz_"
-            ],
-            "Relay(WSD)": [
-                "Ajax, WSD.001.601.000v11_[8XX-66A]_",
-                "Ajax, WSD.001.601.000v11_[9XX-66A]_",
-                "Ajax, WSD.001.603.000v11_",
-                "Ajax, WSD.001.604.000v11_"
-            ],
-            "REX": [
-                "Ajax, HUB-07e [REX-07e-3P-8XX]_",
-                "Ajax, HUB-07e [REX-07e-3P-9XX]_",
-                "Ajax, ReX_Hub-07d_868 Mhz_",
-                "Ajax, HUB-07e[REX-07e-3P-66A-8XX]_"
-            ],
-            "Socket": [
-                "Ajax, SOC.001.MBR.001v9_Radio Board_",
-                "Ajax, SOC.001.MBR.001v9 (9XX)_Radio Board_",
-                "Ajax, SOC.001.REL.001v9_Relay Board_",
-                "Ajax, SOC.001.PLG.000v10_",
-                "Ajax, SOC.001.PLG.001v9a_Plug Board_",
-                "Ajax, SOC.001.SOC.001v9a_Socket Board_"
-            ],
-            "SpaceControl": [
-                "Ajax, SpaceControl v8_868 Mhz_",
-                "Ajax, SpaceControl v8 (9XX)_"
-            ],
-            "StreetSiren": [
-                "Ajax, StreetSiren_v5_868 Mhz_",
-                "Ajax, SS.002.MBR.001v5[8XX-66A]_",
-                "Ajax, SS.002.LD1.001v2_",
-                "Ajax, SS.002.LD2.001v0_",
-                "Ajax, SS.002.LD1.001v4 (9AU)_",
-                "Ajax, SS.002.LD2.001v2 (9AU)_",
-                "Ajax, StreetSiren_LED1_v3_",
-                "Ajax, StreetSiren_LED2_v3_"
-            ],
-            "Transmitter": [
-                "Ajax, TRS.002.601.000v3_",
-                "Ajax, TRS.002.601.000v3 (9XX)_"
-            ],
-            "Wallswitch(WS)": [
-                "Ajax, WS.001.CSN.001v8_",
-                "Ajax, WS.001.RLC.001v8_",
-                "Ajax, WS.001.RFM.001v8 (9XX)_",
-                "Ajax, WS.001.PWB.001v8_",
-                "Ajax, WS.001.RFM.001v8[8XX-66A]_",
-                "Ajax, WS.001.RFM.001v8_[9XX-66A]_"
-            ],
-            "YavirHubPlus": [
-                "Ajax, HYB.HB1.MBR.001v2_868 Mhz_"
+            "Multitransmitter": [
+                "Ajax, MTR.001.MBR.000v1b (8XX_3EOL)_",
+                "Ajax, MTR.001.MBR.000v1b (9XX_3EOL)_"
             ],
             "PSU_for_HUB/HB2": [
                 "Ajax, HB2.001.P12.001v8_",
@@ -193,54 +251,31 @@
                 "Ajax, HB2.001.P24.001v1_",
                 "Ajax, HUB.001.P24.001v1_"
             ],
-            "HUB_2_Plus": [
-                "Ajax, HB2.002.MBR.001v2a_",
-                "Ajax, HB2.002.MBR.001v2a_(9XX/AUX)_",
-                "Ajax, HB2.002.MBR.001v2a_(9XX/AFA)_",
-                "Ajax, HB2.008.MBR.001v0_[8XX-ECG]_",
-                "Ajax, HB2.008.MBR.001v0_[9XX-AFA]_",
-                "Ajax, HB2.008.MBR.001v0_[9XX-AUX]_",
-                "Ajax, HB2.008.MBR.001v0_[9XX-VFA]_",
-                "Ajax, HB2.008.MBR.001v0_[9XX-ECG]_",
-                "Ajax, HB2.008.MBR.001v1_[8XX-ECG]_"
-            ],
-            "Multitransmitter": [
-                "Ajax, MTR.001.MBR.000v1b (8XX_3EOL)_",
-                "Ajax, MTR.001.MBR.000v1b (9XX_3EOL)_"
-            ],
-            "DualcurtainOutdoor": [
-                "Ajax, DCO.001.MBR.001v5_",
-                "Ajax, DCO.001.MBR.001v5 (9XX)_",
-                "Ajax, DCO.001.PIR.001v4_"
-            ],
-            "KeyPad_Plus": [
-                "Ajax, KPP.001.MBR.001v12_",
-                "Ajax, KPP.001.MBR.001v12 (9XX)_",
-                "Ajax, CFM.001.MBR.001v2_"
-            ],
-            "MotionCam_Outdoor": [
-                "Ajax, MCO.001.MBR.001v5_",
-                "Ajax, MCO.001.MBR.001v5 (9XX)_",
-                "Ajax, MCO.001.PIR.001v3_",
-                "Ajax, MCO.001.FLB.001v4_",
-                "Ajax, MCO.001.OVB.001v4_",
-                "Ajax, MCO.001.OVB.001v5_",
-                "Ajax, MCO.001.OVB.001v6_",
-                "Ajax, MCO.001.MBR.001v12_(8XX)_",
-                "Ajax, MCO.001.PIR.001v5_"
-            ],
-            "KeyPad_Combi": [
-                "Ajax, KPS.001.TOP.001v6_",
-                "Ajax, KPS.001.BOT.001v4_",
-                "Ajax, KPS.001.TOP.001v7_",
-                "Ajax, KPS.001.TOP.001v6 (9XX)_",
-                "Ajax, KPS.001.TOP.001v7 (9XX)_"
+            "REX": [
+                "Ajax, HUB-07e [REX-07e-3P-8XX]_",
+                "Ajax, HUB-07e [REX-07e-3P-9XX]_",
+                "Ajax, ReX_Hub-07d_868 Mhz_",
+                "Ajax, HUB-07e[REX-07e-3P-66A-8XX]_"
             ],
             "REX_2": [
                 "Ajax, HB2.005.MBR.001v0_[RX2-8XX]_",
                 "Ajax, HB2.005.MBR.001v0[RX2-8XX-66A]_",
                 "Ajax, HB2.005.MBR.001v0_[RX2-9XX]_",
                 "Ajax, HB2.001.MBR.001v4 [RX2-8XX]_"
+            ],
+            "Relay(WSD)": [
+                "Ajax, WSD.001.601.000v11_[8XX-66A]_",
+                "Ajax, WSD.001.601.000v11_[9XX-66A]_",
+                "Ajax, WSD.001.603.000v11_",
+                "Ajax, WSD.001.604.000v11_"
+            ],
+            "Socket": [
+                "Ajax, SOC.001.MBR.001v9_Radio Board_",
+                "Ajax, SOC.001.MBR.001v9 (9XX)_Radio Board_",
+                "Ajax, SOC.001.REL.001v9_Relay Board_",
+                "Ajax, SOC.001.PLG.000v10_",
+                "Ajax, SOC.001.PLG.001v9a_Plug Board_",
+                "Ajax, SOC.001.SOC.001v9a_Socket Board_"
             ],
             "SocketTypeG": [
                 "Ajax, SOG.001.KEY.001v3_",
@@ -252,109 +287,80 @@
                 "Ajax, SOG.001.REL.001v3_",
                 "Ajax, SOG.001.REL.001v4_"
             ],
-            "YavirHub": [
-                "Ajax, YVH.001.MBR.001_v4_868 Mhz_"
-            ],
-            "anaNAS(NVR)": [
-                "Ajax, NVR.003.MBR.001v4_",
-                "Ajax, NVR.003.PWB.001v1_"
-            ],
-            "LightSwitch": [
-                "Ajax, LSW.001.KS1.001v5_",
-                "Ajax, LSW.001.MBR.001v6[1gang]_",
-                "Ajax, LSW.001.MBR.001v6[2gang]_",
-                "Ajax, LSW.001.MBR.001v6[2way]_",
-                "Ajax, LSW.001.PWR.001v9[1gang]_",
-                "Ajax, LSW.001.PWR.001v9[2gang]_",
-                "Ajax, LSW.001.PWR.001v9[2way]_",
-                "Ajax, LSW.001.KS3.001v3_",
-                "Ajax, LSW.001.KS2.001v3_"
-            ],
-            "MotionCam(PHOD)": [
-                "Ajax, CAM.004.MBR.001v1_868 Mhz_",
-                "Ajax, CAM.004.PIR.001v0_868 Mhz_",
-                "Ajax, CAM.004.PIR.001v0_(9XX)_",
-                "Ajax, CAM.004.MBR.001v3_(8XX)_"
-            ],
-            "MotionCamOutdoor(PHOD)": [
-                "Ajax, MCO.002.MBR.001v0_",
-                "Ajax, MCO.002.MBR.001v0 (9XX)_"
-            ],
-            "HUB_2_Prosegur": [
-                "Ajax, HB2.002.MBR.001v2a (8XX_ECG_PSG)_",
-                "Ajax, HB2.002.MBR.001v2a (9XX_AUX_PSG)_"
-            ],
-            "HUB_2_4G": [
-                "Ajax, HB2.003.MBR.001v1_",
-                "Ajax, HB2.003.MBR.001v1_(9XX/ECG)_",
-                "Ajax, HB2.003.MBR.001v1_[8XX-ECG-EA]_",
-                "Ajax, HB2.006.MBR.001v0_[8XX-ECG]_",
-                "Ajax, HB2.006.MBR.001v0[8XX-ECG-66A]_",
-                "Ajax, HB2.006.MBR.001v0_[9XX-AUX]_",
-                "Ajax, HB2.006.MBR.001v0_[9XX-AFA]_"
-            ],
-            "LifeQualityControl": [
-                "Ajax, LQC.001.MBR.001v10_",
-                "Ajax, LQC.001.MBR.001v10_(9XX) ",
-                "Ajax, LQC.001.LED.001v4_"
-            ],
-            "FireProtect/Plus_2.0(EM)": [
-                "Ajax, EM4.002.MBR.001v4_[FP_8ХХ]_",
-                "Ajax, EM4.002.MBR.001v4_[FPP_8ХХ]_",
-                "Ajax, EM4.002.MBR.001v4_[FPP_9ХХ]_",
-                "Ajax, EM4.002.MBR.001v4_[FP2_SB_8ХХ]_",
-                "Ajax, EM4.002.MBR.001v4_[FP2_SB_9ХХ]_",
-                "Ajax, EM4.002.MBR.001v4_[FPP2_SB_9XX]_",
-                "Ajax, EM4.002.MBR.001v4_[FPP2_SB_8ХХ]_",
-                "Ajax, EM4.002.MBR.001v4_[FP_9ХХ]_"
-            ],
-            "WaterStop": [
-                "Ajax, WTS.001.MBR.001v3 (8XX)_"
-            ],
             "SocketTypeG_Plus": [
                 "Ajax, SGP.001.KEY.001v2_",
                 "Ajax, SGP.001.MBR.001v3_",
                 "Ajax, SGP.001.PWR.001v3_",
                 "Ajax, SGP.001.REL.001v3_"
             ],
-            "KeuPad_Touchscreen": [
-                "Ajax, KPG.001.MBR.000v2_",
-                "Ajax, KPG.001.PRX.000v4_",
-                "Ajax, KPG.001.LOG.000v1_",
-                "Ajax, KPG.001.NFC.000v3_",
-                "Ajax, MOD.001.L01.000v0_",
-                "Ajax, MOD.001.F03.000v0_",
-                "Ajax, MOD.001.D01.000v0_"
+            "SpaceControl": [
+                "Ajax, SpaceControl v8_868 Mhz_",
+                "Ajax, SpaceControl v8 (9XX)_"
+            ],
+            "StreetSiren": [
+                "Ajax, StreetSiren_v5_868 Mhz_",
+                "Ajax, SS.002.MBR.001v5[8XX-66A]_",
+                "Ajax, SS.002.MBR.001v5[9XX-66A]_",
+                "Ajax, SS.002.LD1.001v2_",
+                "Ajax, SS.002.LD2.001v0_",
+                "Ajax, SS.002.LD1.001v4 (9AU)_",
+                "Ajax, SS.002.LD2.001v2 (9AU)_",
+                "Ajax, StreetSiren_LED1_v3_",
+                "Ajax, StreetSiren_LED2_v3_"
+            ],
+            "Transmitter": [
+                "Ajax, TRS.002.601.000v3_",
+                "Ajax, TRS.002.601.000v3 (9XX)_"
             ],
             "UTB_v5": [
                 "Ajax, UTB.001.601.000v5_"
+            ],
+            "Wallswitch(WS)": [
+                "Ajax, WS.001.CSN.001v8_",
+                "Ajax, WS.001.RLC.001v8_",
+                "Ajax, WS.001.RFM.001v8 (9XX)_",
+                "Ajax, WS.001.PWB.001v8_",
+                "Ajax, WS.001.RFM.001v8[8XX-66A]_",
+                "Ajax, WS.001.RFM.001v8_[9XX-66A]_"
+            ],
+            "WaterStop": [
+                "Ajax, WTS.001.MBR.001v3 (8XX)_"
+            ],
+            "YavirHub": [
+                "Ajax, YVH.001.MBR.001_v4_868 Mhz_"
+            ],
+            "YavirHubPlus": [
+                "Ajax, HYB.HB1.MBR.001v2_868 Mhz_"
             ]
         },
         "Fibra": {
+            "CombiProtect": [
+                "Ajax, CPF.001.GP.001v2_"
+            ],
             "DoorProtect/Plus": [
                 "Ajax, DPF.001.MBR.001_v4 [4R] ",
                 "Ajax, DPF.001.MBR.001_v4[4R_DPP] "
+            ],
+            "GlassProtect": [
+                "Ajax, GPF.001.MBR.001v15_868 Mhz "
+            ],
+            "HomeSiren": [
+                "Ajax, HSF.001.MBR.001v3_868 Mhz_"
             ],
             "Hub": [
                 "Ajax, HBF.001.MBR.001v26 [26B-8XX]_",
                 "Ajax, HBF.001.MBR.001v28_(8XX)_"
             ],
-            "HomeSiren": [
-                "Ajax, HSF.001.MBR.001v3_868 Mhz_"
+            "KeyPad": [
+                "Ajax, KPF.002.MBR.001v3_(8ХХ)_",
+                "Ajax, KPF.002.MBR.001v4_"
             ],
-            "vhfBridge": [
-                "Ajax, VHF.001.MBR.001v5_"
+            "LineSplit Fibra": [
+                "Ajax, SPF.001.MBR.001v5_"
             ],
             "MotionProtect": [
                 "Ajax, MPF.001.MBR.001v13_",
                 "Ajax, MPF.001.MBR.001v15_"
-            ],
-            "GlassProtect": [
-                "Ajax, GPF.001.MBR.001v15_868 Mhz "
-            ],
-            "KeyPad": [
-                "Ajax, KPF.002.MBR.001v3_(8ХХ)_",
-                "Ajax, KPF.002.MBR.001v4_"
             ],
             "MotionProtectPlus": [
                 "Ajax, MPF.001.MBR.001v13[MPP]_",
@@ -365,8 +371,8 @@
                 "Ajax, MPP.002.MWB.001v4_",
                 "Ajax, MPP.002.MWB.001v5_"
             ],
-            "CombiProtect": [
-                "Ajax, CPF.001.GP.001v2_"
+            "Multiransmitter": [
+                "Ajax, MTF.001.MBR.001v2_"
             ],
             "StreetSiren": [
                 "Ajax, SSF.001.MBR.001v9_",
@@ -374,8 +380,8 @@
                 "Ajax, SSF.001.LD1.001v2_",
                 "Ajax, SSF.001.LD2.001v2_"
             ],
-            "Multiransmitter": [
-                "Ajax, MTF.001.MBR.001v2_"
+            "vhfBridge": [
+                "Ajax, VHF.001.MBR.001v5_"
             ]
         }
     },
@@ -27814,6 +27820,831 @@
                     "HG1",
                     "HG2",
                     "HG3"
+                ],
+                "AZ": null
+            }
+        },
+        "Ajax, HB2.008.MBR.001v1[9XX-AFA]_": {
+            "TOP": {
+                "L": [
+                    "L1",
+                    "L10",
+                    "L11",
+                    "L12",
+                    "L3",
+                    "L4",
+                    "L5",
+                    "L9"
+                ],
+                "C": [
+                    "C1",
+                    "C10",
+                    "C103",
+                    "C104",
+                    "C105",
+                    "C106",
+                    "C107",
+                    "C108",
+                    "C109",
+                    "C110",
+                    "C111",
+                    "C112",
+                    "C113",
+                    "C114",
+                    "C115",
+                    "C116",
+                    "C117",
+                    "C118",
+                    "C119",
+                    "C12",
+                    "C120",
+                    "C121",
+                    "C122",
+                    "C123",
+                    "C124",
+                    "C125",
+                    "C126",
+                    "C127",
+                    "C128",
+                    "C129",
+                    "C13",
+                    "C130",
+                    "C131",
+                    "C132",
+                    "C133",
+                    "C134",
+                    "C135",
+                    "C136",
+                    "C137",
+                    "C138",
+                    "C139",
+                    "C14",
+                    "C140",
+                    "C142",
+                    "C143",
+                    "C144",
+                    "C145",
+                    "C146",
+                    "C147",
+                    "C148",
+                    "C149",
+                    "C15",
+                    "C150",
+                    "C151",
+                    "C152",
+                    "C153",
+                    "C154",
+                    "C155",
+                    "C156",
+                    "C157",
+                    "C158",
+                    "C159",
+                    "C16",
+                    "C160",
+                    "C161",
+                    "C17",
+                    "C18",
+                    "C19",
+                    "C2",
+                    "C20",
+                    "C22",
+                    "C23",
+                    "C24",
+                    "C26",
+                    "C27",
+                    "C28",
+                    "C29",
+                    "C3",
+                    "C30",
+                    "C31",
+                    "C32",
+                    "C33",
+                    "C34",
+                    "C35",
+                    "C36",
+                    "C37",
+                    "C39",
+                    "C4",
+                    "C40",
+                    "C42",
+                    "C43",
+                    "C44",
+                    "C45",
+                    "C46",
+                    "C47",
+                    "C48",
+                    "C49",
+                    "C5",
+                    "C50",
+                    "C51",
+                    "C52",
+                    "C53",
+                    "C54",
+                    "C55",
+                    "C56",
+                    "C57",
+                    "C58",
+                    "C59",
+                    "C60",
+                    "C61",
+                    "C62",
+                    "C63",
+                    "C64",
+                    "C65",
+                    "C66",
+                    "C67",
+                    "C68",
+                    "C69",
+                    "C70",
+                    "C71",
+                    "C72",
+                    "C75",
+                    "C79",
+                    "C8",
+                    "C80",
+                    "C81",
+                    "C82",
+                    "C9",
+                    "C91"
+                ],
+                "Z": [
+                    "Z1"
+                ],
+                "ZQ": [
+                    "ZQ1",
+                    "ZQ5"
+                ],
+                "VT": [
+                    "VT1",
+                    "VT10",
+                    "VT11",
+                    "VT12",
+                    "VT13",
+                    "VT14",
+                    "VT15",
+                    "VT16",
+                    "VT17",
+                    "VT18",
+                    "VT19",
+                    "VT2",
+                    "VT3",
+                    "VT4",
+                    "VT5",
+                    "VT6",
+                    "VT7",
+                    "VT8",
+                    "VT9"
+                ],
+                "U": [
+                    "U1",
+                    "U2",
+                    "U3",
+                    "U4"
+                ],
+                "DD": [
+                    "DD1",
+                    "DD2",
+                    "DD3",
+                    "DD4",
+                    "DD6",
+                    "DD7"
+                ],
+                "HG": [
+                    "HG1",
+                    "HG2",
+                    "HG3",
+                    "HG4",
+                    "HG5"
+                ],
+                "X": [
+                    "X4",
+                    "X8"
+                ],
+                "R": [
+                    "R1",
+                    "R100",
+                    "R101",
+                    "R102",
+                    "R103",
+                    "R104",
+                    "R105",
+                    "R106",
+                    "R107",
+                    "R108",
+                    "R109",
+                    "R11",
+                    "R110",
+                    "R111",
+                    "R112",
+                    "R113",
+                    "R114",
+                    "R115",
+                    "R116",
+                    "R117",
+                    "R118",
+                    "R119",
+                    "R12",
+                    "R120",
+                    "R121",
+                    "R122",
+                    "R123",
+                    "R124",
+                    "R125",
+                    "R126",
+                    "R127",
+                    "R128",
+                    "R129",
+                    "R13",
+                    "R130",
+                    "R131",
+                    "R132",
+                    "R133",
+                    "R134",
+                    "R135",
+                    "R14",
+                    "R15",
+                    "R16",
+                    "R17",
+                    "R19",
+                    "R20",
+                    "R21",
+                    "R22",
+                    "R23",
+                    "R24",
+                    "R25",
+                    "R26",
+                    "R27",
+                    "R28",
+                    "R29",
+                    "R3",
+                    "R30",
+                    "R31",
+                    "R32",
+                    "R33",
+                    "R34",
+                    "R35",
+                    "R36",
+                    "R37",
+                    "R38",
+                    "R39",
+                    "R4",
+                    "R40",
+                    "R41",
+                    "R42",
+                    "R43",
+                    "R44",
+                    "R5",
+                    "R58",
+                    "R59",
+                    "R60",
+                    "R61",
+                    "R62",
+                    "R63",
+                    "R64",
+                    "R65",
+                    "R66",
+                    "R67",
+                    "R68",
+                    "R69",
+                    "R7",
+                    "R70",
+                    "R71",
+                    "R72",
+                    "R73",
+                    "R74",
+                    "R75",
+                    "R76",
+                    "R77",
+                    "R78",
+                    "R79",
+                    "R8",
+                    "R80",
+                    "R81",
+                    "R82",
+                    "R83",
+                    "R84",
+                    "R85",
+                    "R86",
+                    "R87",
+                    "R88",
+                    "R89",
+                    "R9",
+                    "R90",
+                    "R91",
+                    "R92",
+                    "R93",
+                    "R94",
+                    "R95",
+                    "R96",
+                    "R97",
+                    "R98",
+                    "R99"
+                ],
+                "DA": [
+                    "DA1",
+                    "DA2",
+                    "DA3",
+                    "DA5",
+                    "DA6",
+                    "DA7",
+                    "DA8"
+                ],
+                "VD": [
+                    "VD1",
+                    "VD2",
+                    "VD3",
+                    "VD4",
+                    "VD5"
+                ],
+                "AZ": null
+            },
+            "BOT": {
+                "S": [
+                    "S1"
+                ],
+                "AZ": null
+            }
+        },
+        "Ajax, HB2.008.MBR.001v1[9XX-AUX]_": {
+            "TOP": {
+                "L": [
+                    "L1",
+                    "L10",
+                    "L11",
+                    "L12",
+                    "L3",
+                    "L4",
+                    "L5",
+                    "L9"
+                ],
+                "C": [
+                    "C1",
+                    "C10",
+                    "C103",
+                    "C104",
+                    "C105",
+                    "C106",
+                    "C107",
+                    "C108",
+                    "C109",
+                    "C110",
+                    "C111",
+                    "C112",
+                    "C113",
+                    "C114",
+                    "C115",
+                    "C116",
+                    "C117",
+                    "C118",
+                    "C119",
+                    "C12",
+                    "C120",
+                    "C121",
+                    "C122",
+                    "C123",
+                    "C124",
+                    "C125",
+                    "C126",
+                    "C127",
+                    "C128",
+                    "C129",
+                    "C13",
+                    "C130",
+                    "C131",
+                    "C132",
+                    "C133",
+                    "C134",
+                    "C135",
+                    "C136",
+                    "C137",
+                    "C138",
+                    "C139",
+                    "C14",
+                    "C140",
+                    "C142",
+                    "C143",
+                    "C144",
+                    "C145",
+                    "C146",
+                    "C147",
+                    "C148",
+                    "C149",
+                    "C15",
+                    "C150",
+                    "C151",
+                    "C152",
+                    "C153",
+                    "C154",
+                    "C155",
+                    "C156",
+                    "C157",
+                    "C158",
+                    "C159",
+                    "C16",
+                    "C160",
+                    "C161",
+                    "C17",
+                    "C18",
+                    "C19",
+                    "C2",
+                    "C20",
+                    "C22",
+                    "C23",
+                    "C24",
+                    "C26",
+                    "C27",
+                    "C28",
+                    "C29",
+                    "C3",
+                    "C30",
+                    "C31",
+                    "C32",
+                    "C33",
+                    "C34",
+                    "C35",
+                    "C36",
+                    "C37",
+                    "C39",
+                    "C4",
+                    "C40",
+                    "C42",
+                    "C43",
+                    "C44",
+                    "C45",
+                    "C46",
+                    "C47",
+                    "C48",
+                    "C49",
+                    "C5",
+                    "C50",
+                    "C51",
+                    "C52",
+                    "C53",
+                    "C54",
+                    "C55",
+                    "C56",
+                    "C57",
+                    "C58",
+                    "C59",
+                    "C60",
+                    "C61",
+                    "C62",
+                    "C63",
+                    "C64",
+                    "C65",
+                    "C66",
+                    "C67",
+                    "C68",
+                    "C69",
+                    "C70",
+                    "C71",
+                    "C72",
+                    "C75",
+                    "C79",
+                    "C8",
+                    "C80",
+                    "C81",
+                    "C82",
+                    "C9",
+                    "C91"
+                ],
+                "Z": [
+                    "Z1"
+                ],
+                "ZQ": [
+                    "ZQ1",
+                    "ZQ5"
+                ],
+                "VT": [
+                    "VT1",
+                    "VT10",
+                    "VT11",
+                    "VT12",
+                    "VT13",
+                    "VT14",
+                    "VT15",
+                    "VT16",
+                    "VT17",
+                    "VT18",
+                    "VT19",
+                    "VT2",
+                    "VT3",
+                    "VT4",
+                    "VT5",
+                    "VT6",
+                    "VT7",
+                    "VT8",
+                    "VT9"
+                ],
+                "U": [
+                    "U1",
+                    "U2",
+                    "U3",
+                    "U4"
+                ],
+                "DD": [
+                    "DD1",
+                    "DD2",
+                    "DD3",
+                    "DD4",
+                    "DD6",
+                    "DD7"
+                ],
+                "HG": [
+                    "HG1",
+                    "HG2",
+                    "HG3",
+                    "HG4",
+                    "HG5"
+                ],
+                "X": [
+                    "X4",
+                    "X8"
+                ],
+                "R": [
+                    "R1",
+                    "R100",
+                    "R101",
+                    "R102",
+                    "R103",
+                    "R104",
+                    "R105",
+                    "R106",
+                    "R107",
+                    "R108",
+                    "R109",
+                    "R11",
+                    "R110",
+                    "R111",
+                    "R112",
+                    "R113",
+                    "R114",
+                    "R115",
+                    "R116",
+                    "R117",
+                    "R118",
+                    "R119",
+                    "R12",
+                    "R120",
+                    "R121",
+                    "R122",
+                    "R123",
+                    "R124",
+                    "R125",
+                    "R126",
+                    "R127",
+                    "R128",
+                    "R129",
+                    "R13",
+                    "R130",
+                    "R131",
+                    "R132",
+                    "R133",
+                    "R134",
+                    "R135",
+                    "R14",
+                    "R15",
+                    "R16",
+                    "R17",
+                    "R19",
+                    "R20",
+                    "R21",
+                    "R22",
+                    "R23",
+                    "R24",
+                    "R25",
+                    "R26",
+                    "R27",
+                    "R28",
+                    "R29",
+                    "R3",
+                    "R30",
+                    "R31",
+                    "R32",
+                    "R33",
+                    "R34",
+                    "R35",
+                    "R36",
+                    "R37",
+                    "R38",
+                    "R39",
+                    "R4",
+                    "R40",
+                    "R41",
+                    "R42",
+                    "R43",
+                    "R44",
+                    "R5",
+                    "R58",
+                    "R59",
+                    "R60",
+                    "R61",
+                    "R62",
+                    "R63",
+                    "R64",
+                    "R65",
+                    "R66",
+                    "R67",
+                    "R68",
+                    "R69",
+                    "R7",
+                    "R70",
+                    "R71",
+                    "R72",
+                    "R73",
+                    "R74",
+                    "R75",
+                    "R76",
+                    "R77",
+                    "R78",
+                    "R79",
+                    "R8",
+                    "R80",
+                    "R81",
+                    "R82",
+                    "R83",
+                    "R84",
+                    "R85",
+                    "R86",
+                    "R87",
+                    "R88",
+                    "R89",
+                    "R9",
+                    "R90",
+                    "R91",
+                    "R92",
+                    "R93",
+                    "R94",
+                    "R95",
+                    "R96",
+                    "R97",
+                    "R98",
+                    "R99"
+                ],
+                "DA": [
+                    "DA1",
+                    "DA2",
+                    "DA3",
+                    "DA5",
+                    "DA6",
+                    "DA7",
+                    "DA8"
+                ],
+                "VD": [
+                    "VD1",
+                    "VD2",
+                    "VD3",
+                    "VD4",
+                    "VD5"
+                ],
+                "AZ": null
+            },
+            "BOT": {
+                "S": [
+                    "S1"
+                ],
+                "AZ": null
+            }
+        },
+        "Ajax, SPF.001.MBR.001v5_": {
+            "TOP": {
+                "C": [
+                    "C1",
+                    "C2",
+                    "C3",
+                    "C4",
+                    "C5",
+                    "C6",
+                    "C7",
+                    "C8",
+                    "C9",
+                    "C10",
+                    "C11",
+                    "C12",
+                    "C13",
+                    "C14",
+                    "C15",
+                    "C16",
+                    "C17",
+                    "C18",
+                    "C19",
+                    "C20",
+                    "C21",
+                    "C22",
+                    "C23",
+                    "C24",
+                    "C25",
+                    "C26",
+                    "C27",
+                    "C28",
+                    "C29",
+                    "C30",
+                    "C31",
+                    "C32"
+                ],
+                "D": [
+                    "D1",
+                    "D2"
+                ],
+                "DA": [
+                    "DA1"
+                ],
+                "DD": [
+                    "DD1",
+                    "DD2",
+                    "DD3",
+                    "DD4",
+                    "DD2_1",
+                    "DD2_2",
+                    "DD2_3",
+                    "DD2_4"
+                ],
+                "FB": [
+                    "FB6"
+                ],
+                "HG": [
+                    "HG1",
+                    "HG2"
+                ],
+                "L": [
+                    "L1"
+                ],
+                "R": [
+                    "R1",
+                    "R2",
+                    "R3",
+                    "R4",
+                    "R5",
+                    "R6",
+                    "R7",
+                    "R8",
+                    "R9",
+                    "R10",
+                    "R11",
+                    "R12",
+                    "R13",
+                    "R14",
+                    "R15",
+                    "R16",
+                    "R17",
+                    "R18",
+                    "R19",
+                    "R20",
+                    "R21",
+                    "R22",
+                    "R23",
+                    "R24",
+                    "R25",
+                    "R26",
+                    "R27",
+                    "R28",
+                    "R29",
+                    "R30",
+                    "R31",
+                    "R32",
+                    "R20_1",
+                    "R20_2",
+                    "R20_3",
+                    "R20_4"
+                ],
+                "VD": [
+                    "VD1",
+                    "VD2",
+                    "VD3",
+                    "VD4",
+                    "VD5",
+                    "VD6",
+                    "VD7",
+                    "VD8",
+                    "VD9",
+                    "VD10",
+                    "VD11",
+                    "VD12",
+                    "VD13",
+                    "VD14",
+                    " VD7_1",
+                    " VD7_2",
+                    " VD7_3",
+                    " VD7_4",
+                    "VD8_1",
+                    "VD8_2",
+                    "VD8_3",
+                    "VD8_4",
+                    "VD13_1",
+                    "VD13_2",
+                    "VD13_3",
+                    "VD13_4"
+                ],
+                "VT": [
+                    "VT1",
+                    "VT2",
+                    "VT3"
+                ],
+                "AZ": null
+            },
+            "BOT": {
+                "ZQ": [
+                    "ZQ2"
                 ],
                 "AZ": null
             }

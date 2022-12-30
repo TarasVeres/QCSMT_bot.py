@@ -78,6 +78,8 @@ def func_Device():
                 Sheet['project_all'][type][device] += [project]
         except (IndexError, KeyError):
             pass
+    for key in Sheet['project_all'].keys():
+        Sheet['project_all'][key] = dict(sorted(Sheet['project_all'][key].items()))
     return Sheet
 
 
