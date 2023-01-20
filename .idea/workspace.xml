@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46ff2f6e-e204-4694-910e-8acccf5404aa" name="Changes" comment="Fixed bag update_number_writer">
+    <list default="true" id="46ff2f6e-e204-4694-910e-8acccf5404aa" name="Changes" comment="Add sorted key device">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Telegram/Parsing.py" beforeDir="false" afterPath="$PROJECT_DIR$/Telegram/Parsing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Telegram/QCSMT_bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/Telegram/QCSMT_bot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Telegram/data_file.json" beforeDir="false" afterPath="$PROJECT_DIR$/Telegram/data_file.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671830485277</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add sorted key device">
+      <created>1672381771764</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672381771764</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -138,6 +142,7 @@
     <MESSAGE value="Added phantom component 'AZ' to all projects and their sides and the ability to select it." />
     <MESSAGE value="The row counter in the table is updated automatically" />
     <MESSAGE value="Fixed bag update_number_writer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed bag update_number_writer" />
+    <MESSAGE value="Add sorted key device" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add sorted key device" />
   </component>
 </project>

@@ -5,9 +5,7 @@ import pprint
 import httplib2
 import apiclient
 from oauth2client.service_account import ServiceAccountCredentials
-
-CREDENTIALS_FILE = 'creds.json'
-spreadsheet_id = '15hCNBPiViHGKPxxSuMHrv6ZOd20vtlQqUPM4K731U_w'
+from work_data import *
 
 credentials = ServiceAccountCredentials.from_json_keyfile_name(
     CREDENTIALS_FILE,

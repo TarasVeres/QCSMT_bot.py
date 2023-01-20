@@ -5,12 +5,7 @@ import assembler_message
 from run_json import checker, update_sheet
 import writer
 import Inline_Keyboard
-
-Token_work = '5700162823:AAHXlrfrtM_bTnJeK52Mvs1KnuY9hEqV0LM'
-Chat_work = '-1001770966304'
-
-Token_test = '5182014508:AAEBytjLM9Gu-3F2o1Qc2QPt5bwdvNWxFEk'
-Chat_test = '-1001626029923'
+from work_data import *
 
 bot = Bot(Token_work)
 dp = Dispatcher(bot)
