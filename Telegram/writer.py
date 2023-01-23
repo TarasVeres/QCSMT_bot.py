@@ -3,6 +3,7 @@ import httplib2
 import apiclient
 from oauth2client.service_account import ServiceAccountCredentials
 from work_data import *
+from run_json import write_skl_hum
 
 credentials = ServiceAccountCredentials.from_json_keyfile_name(
     CREDENTIALS_FILE,
@@ -13,16 +14,16 @@ service = apiclient.discovery.build('sheets', 'v4', http=httpAuth)
 
 number = 4
 
-def update_number_writer():
+def update_number_writer(c_id):
     global day, number
-    _ = service.spreadsheets().values().get(spreadsheetId=spreadsheet_id, range='Print!A1:A30000', majorDimension='COLUMNS').execute()
+    _ = service.spreadsheets().values().get(spreadsheetId=spreadsheet_id, range=f'{write_skl_hum(c_id)}!A1:A21000', majorDimension='COLUMNS').execute()
     number = int(_['values'][-1][-1]) if _['values'][-1][-1] != '№' else 4
     return number
 
 def writer(c_id):
     global number
     value = [[''] for i in range(29)]
-    value[0] = [str(update_number_writer() + 1)]
+    value[0] = [str(update_number_writer(c_id) + 1)]
     value[1] = [time.strftime("%d.%m.%Y", time.localtime())]
     value[2] = [time.strftime("%H:%M", time.localtime())]
     value[3] = [c_id['line']]
@@ -64,7 +65,7 @@ def writer(c_id):
         body={
             "valueInputOption": "USER_ENTERED",
             "data": [
-                {"range": f'Print!A{number + 1}:AC30000',
+                {"range": f'{write_skl_hum(c_id)}!A{number + 1}:Y21000',
                  "majorDimension": "COLUMNS",
                  "values": value}
             ]
@@ -74,7 +75,7 @@ def writer(c_id):
 def writer_non_defect(c_id):
     global number
     value = [[''] for i in range(29)]
-    value[0] = [str(update_number_writer() + 1)]
+    value[0] = [str(update_number_writer(c_id) + 1)]
     value[1] = [time.strftime("%d.%m.%Y", time.localtime())]
     value[2] = [time.strftime("%H:%M", time.localtime())]
     value[3] = [c_id['line']]
@@ -91,7 +92,7 @@ def writer_non_defect(c_id):
         body={
             "valueInputOption": "USER_ENTERED",
             "data": [
-                {"range": f'Print!A{number + 1}:AC30000',
+                {"range": f'{write_skl_hum(c_id)}!A{number + 1}:Y21000',
                  "majorDimension": "COLUMNS",
                  "values": value}
             ]

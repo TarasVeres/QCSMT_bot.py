@@ -18,10 +18,12 @@ Sheet = dict()
 
 def func_Access_id():
     global Sheet
-    _ = service.spreadsheets().values().get(spreadsheetId=spreadsheet_id, range='Access_id!A1:B100', majorDimension='ROWS').execute()
+    _ = service.spreadsheets().values().get(spreadsheetId=spreadsheet_id, range='Access_id!A1:C100', majorDimension='ROWS').execute()
     Sheet['access_id'] = {}
+    Sheet['id_loca'] = {}
     for i in _['values']:
         Sheet['access_id'][int(i[0])] = i[1]
+        Sheet['id_loca'][int(i[0])] = i[2]
     return Sheet
 
 def func_Line():
@@ -32,12 +34,28 @@ def func_Line():
         Sheet['lines'] += [i[0]]
     return Sheet
 
+def func_Line_SKL():
+    global Sheet
+    _ = service.spreadsheets().values().get(spreadsheetId=spreadsheet_id, range='Lines_SKL!A1:A30', majorDimension='ROWS').execute()
+    Sheet['lines_skl'] = []
+    for i in _['values']:
+        Sheet['lines_skl'] += [i[0]]
+    return Sheet
+
 def func_Teams():
     global Sheet
     _ = service.spreadsheets().values().get(spreadsheetId=spreadsheet_id, range='Teams!A1:A30', majorDimension='ROWS').execute()
     Sheet['teams'] = []
     for i in _['values']:
         Sheet['teams'] += [i[0]]
+    return Sheet
+
+def func_Teams_SKL():
+    global Sheet
+    _ = service.spreadsheets().values().get(spreadsheetId=spreadsheet_id, range='Teams_SKL!A1:A30', majorDimension='ROWS').execute()
+    Sheet['teams_skl'] = []
+    for i in _['values']:
+        Sheet['teams_skl'] += [i[0]]
     return Sheet
 
 def func_Break():
@@ -78,6 +96,30 @@ def func_Device():
             pass
     for key in Sheet['project_all'].keys():
         Sheet['project_all'][key] = dict(sorted(Sheet['project_all'][key].items()))
+    return Sheet
+
+def func_Device_SKL():
+    global Sheet, type, device
+    _ = service.spreadsheets().values().get(spreadsheetId=spreadsheet_id, range='Stage_device_SKL!A1:C500', majorDimension='ROWS').execute()
+    Sheet['project_all_skl'] = {}
+    for i in _['values']:
+        try:
+            if i[0] != '':
+                type = i[0]
+                Sheet['project_all_skl'][type] = [] if i[1] == i[-1] else {}
+            if (i[1] != '') and (i[1] == i[-1]):
+                device = i[1]
+                Sheet['project_all_skl'][type] += [device]
+            if (i[1] != '') and (i[1] != i[-1]):
+                device = i[1]
+                Sheet['project_all_skl'][type][device] = [] if i[2] == i[-1] else {}
+            if (i[2] != '') and (i[2] == i[-1]):
+                project = i[2]
+                Sheet['project_all_skl'][type][device] += [project]
+        except (IndexError, KeyError):
+            pass
+    for key in Sheet['project_all_skl'].keys():
+        Sheet['project_all_skl'][key] = dict(sorted(Sheet['project_all_skl'][key].items()))
     return Sheet
 
 
@@ -142,6 +184,9 @@ def beginning():
     func_Device()
     func_Spec()
     func_Defects()
+    func_Line_SKL()
+    func_Teams_SKL()
+    func_Device_SKL()
     with open("data_file.json", "w", encoding='utf8') as write_file:
         json.dump(Sheet, write_file, skipkeys=False, indent=4, ensure_ascii=False)
     return
